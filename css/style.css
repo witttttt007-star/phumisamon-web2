@@ -1,9 +1,10 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: black;
+  background: radial-gradient(circle at center, #0f2720, #000000);
   color: white;
 }
+
 
 nav {
   display: flex;
@@ -18,14 +19,51 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 10px cyan;
+}
+
+
 .hero {
   text-align: center;
   margin-top: 100px;
 }
 
 button {
-  padding: 10px 20px;
-  background: cyan;
-  border: none;
+  padding: 12px 25px;
+  background: black;
+  color: cyan;
+  border: 1px solid cyan;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+button:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 20px cyan;
+}
+
+.hero h2 {
+  font-size: 40px;
+  text-shadow: 0 0 20px cyan;
+}
+
+.hero p {
+  color: #aaa;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
