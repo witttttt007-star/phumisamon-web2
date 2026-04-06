@@ -2,30 +2,89 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>ภูมิสมุน</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ภูมิสมุน สมุนไพรไทยแท้ พัฒนาเชื่อมโลกดิจิทัล">
+    <title>ภูมิสมุน | PhumiSamun</title>
+
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
+  <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="container nav-container">
+          <div class="logo">🌿ภูมิสมุน|PHUMISAMUN</div>
 
-  <!-- Navbar -->
-  <nav>
-    <h1>🌿 PHUMISAMON</h1>
-    <div>
-      <a href="index.html">HOME</a>
-      <a href="nft.html">NFT</a>
-      <a href="shop.html">SHOP</a>
-      <a href="lore.html">LORE</a>
-    </div>
-  </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- Navbar -->
+        <nav class="nav" id="nav-menu">
+          <ul class="nav-list">
+
+            </li><a href="index.html">HOME</a></li>
+            </li><a href="nft.html">NFT</a></li>
+            </li><a href="shop.html">SHOP</a></li>
+            </li><a href="lore.html">LORE</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
 
   <!-- Hero -->
   <section class="hero">
-    <h2>Thai Cyberpunk Herbal Lab</h2>
-    <p>โลกสมุนไพร + เทคโนโลยี + NFT</p>
-    <button onclick="goNFT()">Explore NFT</button>
+      <div class="container hero-content">
+          <h2>Thai Cyberpunk Herbal Lab</h2>
+          <p>The world of herbal medicine + technology + NFT</p>
+          
+          <button onclick="goNFT()">Explore NFT</button>
+      </div>
   </section>
+  
+  <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">ConCept</h2>
+            <p>
+              We are leveraging Thai wisdom to develop a digital business system.
+              With plans to expand into NFT and DAO membership systems in the future.
+            </p>
+        </div>
+    </section>
 
-  <script src="js/app.js"></script>
+
+    <!-- 🔊 ปุ่มเสียง -->
+  <div class="audio-control">
+    <button class="btn" onclick="toggleAudio()">🔊 Sound</button>
+  </div>
+
+  <!-- 🎧 เสียง Ambient -->
+  <audio id="bg-audio" loop>
+      <source src="assets/audio/ambient.mp3" type="audio/mpeg">
+  </audio>
+
+    <!--ใส่เส้นสีเขียว  -->
+   <div class="line"></div>
+
+  <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 ภูมิสมุน | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+  <!-- JS -->
+
+    <script src="js/app.js"></script>
+    <script src="js/audio.js"></script>
+
+
+
 </body>
 </html>
